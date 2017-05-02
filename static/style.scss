@@ -1,0 +1,58 @@
+html, body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.display {
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+
+    max-width: 95%;
+
+    align-items: center;
+    justify-content: center;
+
+    font-size: 3em;
+
+    .text {
+        #selector {
+            border: none;
+            font-size: .9em;
+            font-weight: lighter;
+
+        }
+
+        #level {
+            width: 150px;
+        }
+
+        .selected {
+            display: block;
+        }
+
+        #one {
+            display: none;
+            &.selected {
+                display: block;
+            }
+        }
+
+        #two {
+            display: none;
+            &.selected {
+                display: block;
+            }
+        }
+
+        #stf-1, #stf-2, #st {
+
+            width: 60px;
+        }
+     }
+
+
+}

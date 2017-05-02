@@ -1,0 +1,35 @@
+html, body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  margin: 0;
+  padding: 0;
+  height: 100%; }
+
+.display {
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  max-width: 95%;
+  align-items: center;
+  justify-content: center;
+  font-size: 3em; }
+  .display .text #selector {
+    border: none;
+    font-size: .9em;
+    font-weight: lighter; }
+  .display .text #level {
+    width: 150px; }
+  .display .text .selected {
+    display: block; }
+  .display .text #one {
+    display: none; }
+    .display .text #one.selected {
+      display: block; }
+  .display .text #two {
+    display: none; }
+    .display .text #two.selected {
+      display: block; }
+  .display .text #stf-1, .display .text #stf-2, .display .text #st {
+    width: 60px; }
+
+/*# sourceMappingURL=style.css.map */

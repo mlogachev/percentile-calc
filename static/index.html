@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="static/style.css">
+</head>
+<body>
+	<div class="display">
+		<div class="wrap">
+            <span class="text"> Квантиль
+              <div class="btn-group" role="group">
+			    <button id="selector" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			      нормального
+			    </button>
+			    <div class="dropdown-menu" aria-labelledby="selector">
+			      <a class="dropdown-item" data-distribution="norm">нормального</a>
+			      <a class="dropdown-item" data-distribution="fisher">фишера</a>
+			      <a class="dropdown-item" data-distribution="student">стьюдента</a>
+			      <a class="dropdown-item" data-distribution="hi">хи-квадрат</a>
+
+			    </div>
+			  </div>
+
+            распределения на уровне 
+            	<input id="level" type="text" name="level" value="0"> 
+           		<span id="one"> со степенью свободы <input id="st" type="text" name="st-1" value="0"> </span>
+           		<span id="two"> со степенями свободы 
+           			<input id="stf-1" type="text" name="st-1" value="0">
+           			<input id="stf-2" type="text" name="st-2" value="0">
+           		</span>
+            	: <span id="result"></span>
+            </span>
+
+		</div>
+	</div>
+
+
+
+    <script src="static/script.js" type="text/javascript" charset="utf-8" async></script>
+</body>
+</html>
