@@ -1,0 +1,10 @@
+#python
+flask/
+__pycache__/
+
+# sass
+.sass-cache
+
+# idea
+.idea/
+
