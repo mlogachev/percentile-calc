@@ -36,25 +36,25 @@ $(document).ready( function () {
 
 		switch (options.d) {
 			case 'norm':
-				const url = `/norm/${value}`;
+				const url = `http://mlogachev.pythonanywhere.com/api/norm/${value}`;
 				callAjax( url );
 				break;
 			case 'student':
 				if ( st > 0 ) {
-					const url = `/student/${value}/${st}`;
+					const url = `http://mlogachev.pythonanywhere.com/api/student/${value}/${st}`;
 					callAjax( url );	
 				}
 
 				break;
 			case 'hi':
 				if ( st > 0 ) {
-					const url = `/hi/${value}/${st}`;
+					const url = `http://mlogachev.pythonanywhere.com/api/hi/${value}/${st}`;
 					callAjax( url );
 				}
 				break;
 			case 'fisher':
 				if (st1 > 0 && st2 > 0) {
-					const url = `/fisher/${value}/${st1}/${st2}`;
+					const url = `http://mlogachev.pythonanywhere.com/api/fisher/${value}/${st1}/${st2}`;
 					callAjax( url );
 				}
 				break;
@@ -64,11 +64,8 @@ $(document).ready( function () {
 	}
 
 	function callAjax( url ) {
-
-		const apiUrl = `http://mlogachev.pythonanywhere.com/api` + url;
-
 		$.ajax({
-			apiUrl,
+			url,
 			success: function( resp ) {
 				handleResponse( resp );
 			}.bind(this)
