@@ -16,7 +16,10 @@ html, body {
   .display .text #selector {
     border: none;
     font-size: .9em;
-    font-weight: lighter; }
+    font-weight: lighter;
+    cursor: pointer; }
+  .display .text .dropdown-menu {
+    cursor: pointer; }
   .display .text #level {
     width: 150px; }
   .display .text .selected {

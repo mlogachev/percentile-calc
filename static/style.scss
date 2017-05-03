@@ -23,7 +23,12 @@ html, body {
             border: none;
             font-size: .9em;
             font-weight: lighter;
+            cursor: pointer;
 
+        }
+
+        .dropdown-menu {
+            cursor: pointer;
         }
 
         #level {
